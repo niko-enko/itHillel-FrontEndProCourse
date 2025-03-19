@@ -6,11 +6,12 @@ function  User (name, age,gender, country, city) {
     this.city = city;
     this.getUserInfo = (fullInfo) => {
         return fullInfo
-        ? `Користувач ${this.name}: вік - ${this.age}, стать - ${this.gender}, країна - ${this.country}, місто - ${this.city}`
-        : `Користувач ${this.name} з міста ${this.city}, ${this.country}`
+        ? console.log(`Користувач ${this.name}: вік - ${this.age}, стать - ${this.gender}, країна - ${this.country}, місто - ${this.city}`)
+        : console.log(`Користувач ${this.name} з міста ${this.city}, ${this.country}`)
     };
 }
 
 const user = new User('Данило', 27, 'чоловіча', 'Україна', 'Київ');
 
-console.log(user.getUserInfo(true))
+console.log(user);
+user.getUserInfo(true);
