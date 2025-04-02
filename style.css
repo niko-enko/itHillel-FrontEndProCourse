@@ -1,0 +1,120 @@
+body {
+    line-height: 1;
+}
+
+*:focus {
+    outline: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+.icon .path {
+    fill: #000;
+}
+
+textarea {
+    font-style: inherit;
+    font-family: inherit;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+blockquote ::before,
+blockquote ::after,
+q ::before,
+q ::after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5f5fa;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.card__title {
+    color: #f0185b;
+    font-weight: bold;
+}
+
+.card__sub-title {
+    color: #b4b8c5
+}
+
+.card__form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.card__input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.card__input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.card__input:focus {
+    outline: 2px solid #24a3ff;
+}
+
+.card__input--error {
+    border: 2px solid #f0185b;
+    color: #f0185b;
+}
+
+.card__error {
+    color: #f0185b;
+    height: 20px;
+    width: 100%;
+    visibility: hidden;
+    font-size: 80%;
+}
+
+.card__btn {
+    background-color: #24a3ff;
+    border: none;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: rgba(19, 159, 253, 0.2) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+

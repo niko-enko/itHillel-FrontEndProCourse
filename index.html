@@ -7,7 +7,33 @@
 	<title>Document</title>
 </head>
 <body>
-	
+	<div class="container">
+		<div class="card">
+			<h2 class="card__title">We would like to help you</h2>
+			<form class="card__form">
+				<div class="card__input-field">
+					<input type="text" class="card__input" placeholder="Enter your name" name="name">
+					<div class="card__error" id="err-name"></div>
+				</div>
+				<div class="card__input-field">
+					<textarea type="text" class="card__input card__input--multiline" placeholder="Message" name="message" rows="3"></textarea>
+					<div class="card__error" id="err-message"></div>
+				</div>
+				<div class="card__contact-info">
+					<h3 class="card__sub-title">how to answear you</h3>
+					<div class="card__input-field">
+						<input type="text" class="card__input" placeholder="Phone number" name="phone">
+						<div class="card__error" id="err-phone"></div>
+					</div>
+					<div class="card__input-field">
+						<input type="text" class="card__input" placeholder="Email" name="email">
+						<div class="card__error" id="err-email"></div>
+					</div>
+				</div>
+				<button type="submit" class="card__btn">Send message</button>
+			</form>
+		</div>
+	</div>
 </body>
 <script src="./main.js"></script>
 </html>
