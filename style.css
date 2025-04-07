@@ -1,0 +1,96 @@
+/*СSS Reset START*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+#root, #__next {
+    isolation: isolate;
+}
+/*CSS Reset END*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 60%;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+
+    background-color: #f5f5fa;
+}
+
+.card__image {
+    width: 30%;
+}
+
+.main__button--hidden {
+    visibility: hidden;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.slider__dot {
+    height: 5px;
+    width: 5px;
+}
+
+.slider__dot:hover {
+    cursor: pointer;
+}
+
+.about-us__button {
+    width: 50px;
+    height: 50px;
+}
+
+.card__person {
+    display: flex;
+    flex-direction: column;
+}
