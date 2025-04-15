@@ -3,8 +3,8 @@ function Student (firstName, lastName, birthYear) {
     let _lastName = lastName;
     let _birthYear = birthYear;
     let _lesson = 0;
-    const _attendance = [...Array(25)];
-    const _grades = [...Array(25)];
+    const _attendance = new Array(25);
+    const _grades = new Array(25);
 
     Object.defineProperty(this, 'firstName', {
         get: function () {
