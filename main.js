@@ -1,30 +1,27 @@
 class Calculator {
-    constructor(digA, digB) {
-        this.digA = digA;
-        this.digB = digB;
+
+    add(a, b) {
+        return a + b;
     }
 
-    sum() {
-        return this.digA + this.digB;
+    subtract(a, b) {
+        return a - b;
     }
 
-    subtract() {
-        return this.digA - this.digB;
+    multiply(a, b) {
+        return a * b;
     }
 
-    multiply() {
-        return this.digA * this.digB;
-    }
-
-    divide() {
-        return this.digA / this.digB;
+    divide(a, b) {
+        return a / b;
     }
 }
 
-const calculator = new Calculator(5, 2);
+const calculator = new Calculator();
+console.log(calculator.add(5, 3)); // 8
 
-console.log(calculator.sum())
+console.log(calculator.subtract(10, 4)); // 6
 
-const calculator2 = new Calculator(10, 5);
+console.log(calculator.multiply(3, 6)); // 18
 
-console.log(calculator2.divide())
+console.log(calculator.divide(8, 2)); // 4
