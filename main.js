@@ -30,7 +30,7 @@ function createDateTimeBlock (dateTimeValue, sunriseValue) {
     const dateTimeBlock = document.createElement('div');
     dateTimeBlock.classList.add('date-time');
 
-    const {hours, minutes, day, monthLong, year, weekDay, monthShort} =
+    const {hours, minutes, day, monthLong, year, weekDay} =
         parseDateTime(dateTimeValue);
     const {hours: sunriseHours, minutes: sunriseMinutes} = parseDateTime(sunriseValue);
 
@@ -108,7 +108,7 @@ function createWeatherBlock (weatherData, mainData) {
     return temperatureBlock;
 }
 
-function createDateAndRefreshBlock (dateTimeValue, sunriseValue) {
+function createDateAndRefreshBlock (dateTimeValue) {
     const dateAndRefresh = document.createElement('div');
     dateAndRefresh.classList.add('date-and-refresh');
 
