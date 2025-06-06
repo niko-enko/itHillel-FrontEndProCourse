@@ -1,5 +1,6 @@
-import {renderPosts, renderComments} from "./ui.js";
-import {loadPosts, loadComments, uploadPost} from "./api.js"
+import {renderPosts, renderComments} from "./js/ui.js";
+import {loadPosts, loadComments, uploadPost} from "./api/api.js"
+import './style/style.scss'
 
 const addPostForm = document.querySelector('#form')
 const postsList = document.querySelector('.posts-list')

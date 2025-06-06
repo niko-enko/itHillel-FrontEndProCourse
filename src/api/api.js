@@ -1,4 +1,4 @@
-import {API_URL, QUERIES, PATH} from './config.js'
+import {API_URL, QUERIES, PATH} from '../config/config.js'
 
 const request = async (url, init) => {
     try {
