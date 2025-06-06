@@ -1,4 +1,4 @@
-import {API_URL, QUERIES, PATH} from '../config/config.js'
+import {API_URL, QUERIES, PATH, LIMITS} from '../config/config.js'
 
 const request = async (url, init) => {
     try {
@@ -16,10 +16,9 @@ const request = async (url, init) => {
 }
 
 export const loadPosts = async () => {
-    const url = `${API_URL}/${PATH.posts}?${QUERIES.limit}=10`
+    const url = `${API_URL}/${PATH.posts}?${QUERIES.limit}=${LIMITS.posts}`
 
     const requestParams = {
-        method: 'GET',
         headers: {
             'Content-Type': 'application/json, charset=UTF-8'
         }
@@ -37,10 +36,9 @@ export const loadPosts = async () => {
 export const loadComments = async (postId) => {
     const id = postId.split('-')[1]
 
-    const url = `${API_URL}/${PATH.posts}/${id}/${PATH.comments}?${QUERIES.limit}=2`
+    const url = `${API_URL}/${PATH.posts}/${id}/${PATH.comments}?${QUERIES.limit}=${LIMITS.comments}`
 
     const requestParams = {
-        method: 'GET',
         headers: {
             'Content-Type': 'application/json, charset=UTF-8'
         }

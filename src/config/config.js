@@ -8,3 +8,8 @@ export const PATH = {
     posts: 'posts',
     comments: 'comments',
 }
+
+export const LIMITS = {
+    posts: 10,
+    comments: 2,
+}
