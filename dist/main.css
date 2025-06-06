@@ -1,3 +1,6 @@
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style/style.scss ***!
+  \***************************************************************************************************************/
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -6,7 +9,7 @@
 /* 2. Remove default margin */
 * {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Reset for ul and li elements */
@@ -16,6 +19,12 @@ ul, li {
   list-style: none;
 }
 
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
 body {
   /* 4. Add accessible line-height */
   line-height: 1.5;
@@ -43,6 +52,7 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
+
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
@@ -58,7 +68,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: start;
   flex-direction: column;
-
   width: 100%;
   height: 100%;
   padding: 50px 10% 0 10%;
@@ -72,11 +81,8 @@ h1, h2, h3, h4, h5, h6 {
   gap: 25px;
   width: 100%;
   height: 100%;
-
   padding: 50px 100px;
-
   margin-bottom: 50px;
-
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 25px;
 }
@@ -89,38 +95,31 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   /*justify-content: center;*/
   align-items: center;
-
   padding: 20px 30px;
-
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 25px;
-
 }
 
 .comments {
   display: flex;
   flex-direction: column;
   gap: 25px;
-
-  &__li {
-    border-left: gray solid 2px;
-    padding-left: 20px;
-
-  }
 }
-.form {
-  &__input {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    justify-content: center;
-  }
-  &__input-field {
-    padding: 7px 10px;
-  }
+.comments__li {
+  border-left: gray solid 2px;
+  padding-left: 20px;
+}
 
-  &__add-btn {
-    padding: 7px 20px;
-  }
+.form__input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+.form__input-field {
+  padding: 7px 10px;
+}
+.form__add-btn {
+  padding: 7px 20px;
 }
